@@ -9,9 +9,48 @@
 html {
     font-family: 'Varela Round', sans-serif;
     scroll-behavior: smooth;
+    color: #FFFFFF;
 }
 
 /* ------------------------------------------------------------------------------------------ */
 
 /* PRESETS VARI */
 
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    background: #141922;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    background: #282828;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+aside {
+    width: 15vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    z-index: 1;
+    background: black;
+}
+
+.main-container {
+    display: flex;
+}
+
+.header-fixed {
+    width: calc(100vw - 15vw);
+    height: 60px;
+    padding:  0 50px;
+    background: #090B12;
+}
