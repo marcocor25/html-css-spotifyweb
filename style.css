@@ -43,8 +43,11 @@ a {
 
 /* ------------------------------------------------------------------------------------------ */
 
-aside {
+/* MAIN */
+
+.sidebar {
     width: 180px;
+    height: calc(100vh - 50px);
     display: flex;
     flex-shrink: 0;
     background: black;
@@ -56,13 +59,13 @@ aside {
     flex-grow: 1;
 }
 
-.header-fixed {
+.main__header {
     height: 50px;
     border: 2px dashed yellow;
     background: #090B12;
 }
 
-.category {
+.main__row {
     height: 25px;
     display: flex;
     justify-content: center;
@@ -70,13 +73,25 @@ aside {
     border: 2px dashed deeppink;
 }
 
-.category-list {
+.categories {
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.category-list li a {
+.categories li a {
     text-transform: uppercase;
     color: #7A7C80;
+}
+
+.jumbo__container {
+    height: calc(100vh - 125px);
+    overflow: auto;
+    border: 2px dashed blue;
+}
+
+.main__row.title {
+    justify-content: flex-start;
+    padding: 40px 15px;
+    font-size: 15px;
 }
