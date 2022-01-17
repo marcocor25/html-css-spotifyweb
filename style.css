@@ -61,16 +61,15 @@ a {
 
 .main__header {
     height: 50px;
-    border: 2px dashed yellow;
     background: #090B12;
 }
 
-.main__row {
+.row {
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px dashed deeppink;
+    border: 2px dashed red;
 }
 
 .categories {
@@ -86,12 +85,38 @@ a {
 
 .jumbo__container {
     height: calc(100vh - 125px);
-    overflow: auto;
+}
+
+.row.title {
+    justify-content: flex-start;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.row.title:first-child {
+    margin: 20px 0;
+}
+
+.playlist__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     border: 2px dashed blue;
 }
 
-.main__row.title {
-    justify-content: flex-start;
-    padding: 40px 15px;
-    font-size: 15px;
+.card__container {
+    width: 180px;
+    height: 280px;
+}
+
+.card-img {
+    width: 180px;
+    height: 180px;
+    border: 2px dashed yellow;
+}
+
+.card-info {
+    width: 180px;
+    height: 60px;
+    border: 2px dashed yellow;
 }
