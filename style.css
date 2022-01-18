@@ -30,7 +30,7 @@ main {
 }
 
 footer {
-    height: 50px;
+    min-height: 50px;
     display: flex;
     background: #282828;
 }
@@ -47,34 +47,41 @@ a {
 
 .sidebar {
     width: 180px;
-    height: calc(100vh - 50px);
     display: flex;
     flex-shrink: 0;
     background: black;
 }
 
 .main-container {
+    height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    overflow: auto;
 }
 
 .main__header {
-    height: 50px;
+    min-height: 50px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
     background: #090B12;
 }
 
 .row {
-    height: 25px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     border: 2px dashed red;
 }
 
 .categories {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
 
@@ -83,30 +90,27 @@ a {
     color: #7A7C80;
 }
 
-.jumbo__container {
-    height: calc(100vh - 125px);
-}
-
 .row.title {
     justify-content: flex-start;
     padding: 20px;
     font-size: 15px;
 }
 
-.row.title:first-child {
-    margin: 20px 0;
+.description {
+    padding-top: 10px;
+    color: #73757B;
 }
 
 .playlist__container {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
     border: 2px dashed blue;
 }
 
 .card__container {
-    width: 180px;
-    height: 280px;
+    background: blue;
 }
 
 .card-img {
