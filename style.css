@@ -294,6 +294,15 @@ img {
     color: #757575;
 }
 
+.heart-folder a {
+    color: #757575;
+    transition: 200ms linear;
+}
+
+.heart-folder a:hover {
+    color: white;
+}
+
 /* ------------------------------------------------------------------------------------------ */
 
 /* PLAYER */
