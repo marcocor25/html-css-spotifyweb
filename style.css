@@ -9,7 +9,7 @@
 html {
     font-family: 'Varela Round', sans-serif;
     scroll-behavior: smooth;
-    font-size: 12px;
+    font-size: 14px;
     color: #FFFFFF;
 }
 
@@ -25,13 +25,15 @@ body {
 
 main {
     display: flex;
-    flex-grow: 1;
-    background: #141922;
+    flex-direction: rew;
 }
 
 footer {
-    min-height: 50px;
+    min-height: 90px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
     background: #282828;
 }
 
@@ -46,95 +48,42 @@ a {
 /* MAIN */
 
 .sidebar {
-    width: 180px;
     display: flex;
+    flex-direction: column;
+    flex-basis: 230px;
     flex-shrink: 0;
     background: black;
 }
 
 .main-container {
-    height: calc(100vh - 50px);
+    width: calc(100vh - 230px);
+    height: calc(100vh - 90px);
     display: flex;
-    flex-direction: column;
     flex-grow: 1;
-    overflow: auto;
+    flex-direction: column;
+    background: #141922;
 }
 
-.main__header {
-    min-height: 50px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 999;
+.header {
+    min-height: 90px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
     background: #090B12;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 2px dashed red;
+.cta {
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 1px solid #B4B4B6;
+    transition: 100ms linear;
+    color: #FDFDFD;
 }
 
-.categories {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
-.categories li a {
-    text-transform: uppercase;
-    color: #7A7C80;
-}
-
-.row.title {
-    justify-content: flex-start;
-    padding: 20px;
-    font-size: 15px;
-}
-
-.description {
-    padding-top: 10px;
-    color: #73757B;
-}
-
-.playlist__container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 0 20px;
-    border: 2px dashed blue;
-}
-
-.card__container {
-    /* background: blue; */
-}
-
-.card-img {
-    width: 200px;
-    height: 200px;
-    border: 2px dashed yellow;
-}
-
-.card-info {
-    width: 200px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px dashed yellow;
-}
-
-.card__container:nth-child(2) .card-info p:first-child {
-    padding-top: 10px;
-    text-align: center;
-}
-
-.card-info p:nth-child(2) {
-    line-height: 20px;
-    color: #73757B;
+.cta:hover {
+    transform: scale(1.08);
+    border: 1px solid white;
+    color: #white;
 }
