@@ -32,7 +32,7 @@ main {
 footer {
     min-height: 90px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
     background: #282828;
@@ -234,4 +234,36 @@ img {
     transform: scale(1.08);
     border: 1px solid white;
     color: #white;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* FOOTER */
+
+.music-box {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    border: 2px dashed deeppink;
+}
+
+.cover {
+    width: 50px;
+    height: 50px;
+}
+
+.track-title {
+    padding: 0 15px;
+}
+
+.track-title p:last-child {
+    color: #757575;
+}
+
+.heart-folder {
+    display: flex;
+    gap: 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #757575;
 }
