@@ -62,8 +62,7 @@ img {
     flex-direction: column;
     flex-basis: 230px;
     flex-shrink: 0;
-    justify-content: space-between;
-    overflow: auto;
+    overflow: hidden;
     background: black;
 }
 
@@ -76,6 +75,7 @@ img {
 .menu {
     display: flex;
     flex-direction: column;
+    border: 2px dashed yellow;
 }
 
 .menu a {
@@ -154,53 +154,54 @@ img {
     line-height: 30px;
 }
 
-.app {
+.playlist-scroll {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.bottom-container {
     width: 90%;
-    margin: 15px auto;
-    border-bottom: 1px solid #656565;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed deeppink;
+}
+
+.download {
     display: flex;
     align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #656565;
     transition: 200ms linear;
     color: #686868;
 }
 
-.dl-ico-box {
-    width: 18px;
-    margin-top: 5px;
-    margin-right: 5px;
-}
-
-.dl-ico {
-    transition: 200ms linear;
-}
-
-.app:hover {
+.download:hover {
     color: white;
 }
 
-.app:hover .dl-ico {
-    fill: white;
+.download div {
+    margin-left: 5px;
 }
 
 .profile {
-    width: 90%;
-    margin: 10px auto;
     display: flex;
     align-items: center;
+    padding: 5px 0;
     font-size: 15px;
 }
 
-.profile-icon {
+.profile-avatar {
     width: 30px;
     height: 30px;
     margin-right: 10px;
     padding: 5px;
-    border-radius: 50%;
     overflow: hidden;
+    border-radius: 50%;
     background: #808080;
 }
 
-.profile-text a:hover {
+.profile a:hover {
     text-decoration: underline;
 }
 
