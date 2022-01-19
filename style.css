@@ -30,6 +30,7 @@ main {
 }
 
 footer {
+    width: 100vw;
     min-height: 90px;
     display: flex;
     justify-content: space-between;
@@ -68,8 +69,8 @@ img {
 
 .logo {
     width: 70%;
-    padding: 15px;
-    margin-bottom: 10px;
+    line-height: 90px;
+    border: 2px dashed red;
 }
 
 .menu {
@@ -119,11 +120,12 @@ img {
 }
 
 .playlist {
-    margin-top: 20px;
     padding: 0 15px;
+    border: 2px dashed red;
 }
 
 .playlist-title {
+    padding-top: 20px;
     text-transform: uppercase;
 }
 
@@ -164,7 +166,7 @@ img {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border: 2px dashed deeppink;
+    border: 2px dashed red;
 }
 
 .download {
@@ -244,7 +246,7 @@ img {
 .main-content {
     width: calc(100vw - 230px);
     height: calc(100vh - 180px);
-    border: 2px dashed deeppink;
+    border: 2px dashed magenta;
 }
 
 
@@ -262,14 +264,19 @@ img {
 /* MUSIC BOX */
 
 .music-box {
-    margin: 0 20px;
+    width: 230px;
+    height: 100%;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
+    gap: 10px;
+    border: 2px dashed yellow;
 }
 
 .cover {
     width: 50px;
     height: 50px;
+    margin-left: 10px;
     position: relative;
 }
 
@@ -294,7 +301,7 @@ img {
 }
 
 .track-title {
-    padding: 0 15px;
+    flex-grow: 1;
 }
 
 .t-t_hover {
@@ -309,7 +316,6 @@ img {
 .heart-folder {
     display: flex;
     gap: 10px;
-    padding: 0 20px;
     font-size: 16px;
     color: #757575;
 }
@@ -333,13 +339,15 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    border: 2px dashed red;
 }
 
 .player-buttons {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     font-size: 18px;
+    border: 2px dashed yellow;
 }
 
 .player-buttons a {
@@ -348,7 +356,12 @@ img {
 
 .fa-play-circle {
     font-size: 36px;
-    padding: 0 5px;
+    margin: 0 5px;
+    transition: 100ms linear;
+}
+
+.fa-play-circle:hover {
+    transform: scale(1.08);
 }
 
 .timeline {
@@ -402,10 +415,11 @@ img {
 /* TOOLS */
 
 .tools {
-    margin: 0 20px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     gap: 20px;
+    border: 2px dashed yellow;
 }
 
 .volume.dark-bar {
