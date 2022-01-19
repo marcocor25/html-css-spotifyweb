@@ -430,4 +430,13 @@ img {
     width: 30%;
 }
 
+/* ------------------------------------------------------------------------------------------ */
+
+/* SCROLL-BAR STYLE */
+
+::-webkit-scrollbar {width: 2px;}
+::-webkit-scrollbar-thumb {visibility: hidden; border-radius: 5px; background: #FFFFFF}
+.playlist-scroll:hover::-webkit-scrollbar-thumb {visibility: visible;}
+
+
 /* FINE */
