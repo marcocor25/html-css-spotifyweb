@@ -70,7 +70,6 @@ img {
 .logo {
     width: 70%;
     line-height: 90px;
-    border: 2px dashed red;
 }
 
 .menu {
@@ -216,6 +215,7 @@ img {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    overflow: auto;
     background: #141922;
 }
 
@@ -226,13 +226,18 @@ img {
     justify-content: flex-end;
     align-items: center;
     text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .cta {
     padding: 10px 40px;
     border-radius: 20px;
     border: 1px solid #B4B4B6;
+    text-align: center;
     transition: 100ms linear;
     color: #FDFDFD;
 }
@@ -243,21 +248,69 @@ img {
     color: #white;
 }
 
-.main-content {
-    width: calc(100vw - 230px);
-    height: calc(100vh - 180px);
-    border: 2px dashed magenta;
+.categories {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
 }
 
+.categories a {
+    text-transform: uppercase;
+    transition: 200ms linear;
+    color: #787A80;
+}
 
+.categories a:hover {
+    color: white;
+}
 
+.categories ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/* to be continued... */
+.active div {
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: #1DD760;
+}
 
+.album-container {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed blue;
+}
 
+.row {
+    padding: 20px 0;
+    border: 2px dashed yellow;
+}
 
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.card {
+    margin-right: 2%;
+    width: 15%;
+    border: 5px dashed red;
+}
+
+.card:nth-child(6) {
+    margin-right: 0;
+}
 
 /* ------------------------------------------------------------------------------------------ */
 
@@ -402,7 +455,7 @@ img {
     background: white;
 }
 
-.light-bar:hover {
+.dark-bar:hover .light-bar {
     background: #1DD760;
 }
 
