@@ -231,7 +231,6 @@ img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    text-transform: uppercase;
     position: sticky;
     top: 0;
     left: 0;
@@ -243,9 +242,14 @@ img {
     padding: 10px 40px;
     border-radius: 20px;
     border: 1px solid #B4B4B6;
+    text-transform: uppercase;
     text-align: center;
     transition: 100ms linear;
     color: #FDFDFD;
+}
+
+.cta-small {
+    display: none;
 }
 
 .cta:hover {
@@ -255,7 +259,7 @@ img {
 }
 
 .categories {
-    padding: 15px 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
