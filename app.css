@@ -20,13 +20,29 @@
 
 /* VIEVPORT 900PX */
 
-@media screen and (max-width: 900PX) {
+@media screen and (max-width: 900px) {
     .card-wrapper {
         justify-content: center;
+        gap: 30px;
     }
 
     .card {
         width: 45%;
+        margin: 0;
+    }
+
+    .row-1, .row-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row-1 {
+        padding-bottom: 40px;
+    }
+
+    .row-2 {
+        padding: 50px 0;
     }
 
     .dark-bar {
@@ -47,6 +63,14 @@
 @media screen and (max-width: 680px) {
     .sidebar {
         flex-basis: 60px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo-small {
+        display: block;
     }
 
     .widget {
@@ -113,3 +137,5 @@
         font-size: 12px;
     }
 }
+
+/* FINE */

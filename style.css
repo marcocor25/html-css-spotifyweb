@@ -73,6 +73,13 @@ img {
     line-height: 85px;
 }
 
+.logo-small {
+    width: 36px;
+    height: 36px;
+    margin: 15px auto;
+    display: none;
+}
+
 .menu {
     display: flex;
     flex-direction: column;
