@@ -21,6 +21,11 @@
 /* VIEVPORT 900PX */
 
 @media screen and (max-width: 900px) {
+    .cta {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+
     .card-wrapper {
         justify-content: center;
         gap: 30px;
@@ -58,9 +63,9 @@
     }
 }
 
-/* VIEWPORT 680PX */
+/* VIEWPORT 780PX */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 780px) {
     .sidebar {
         flex-basis: 60px;
     }
@@ -114,12 +119,18 @@
         margin-right: 0;
     }
 
+    .fixed__head-bar {
+        min-height: 70px;
+        justify-content: center;
+    }
+
+    .cta {
+        padding: 5px 15px;
+        font-size: 10px;
+    }
+
     .categories {
         padding: 15px;
-    }
-    
-    .music-box {
-        width: 200px;
     }
 
     .heart-folder {
@@ -127,14 +138,106 @@
         justify-content: center;
         gap: 0;
     }
+    
+    .player-buttons {
+        font-size: 14px;
+    }
 
-    .track-title {
-        flex-grow: 0.5;
+    .fa-play-circle {
+        font-size: 24px;
     }
 
     .timeline {
         gap: 12px;
-        font-size: 12px;
+        font-size: 10px;
+    }
+}
+
+/* VIEWPORT 680PX */
+
+@media screen and (max-width: 680px) {
+    main {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        justify-content: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .bottom-container {
+        display: none;
+    }
+    
+    .card-img {
+        box-shadow: 0 0 15px 5px black;
+    }
+
+    .categories {
+        padding: 20px 45px;
+        font-size: 12px
+    }
+
+    .fixed__head-bar {
+        display: none;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .track-title {
+        display: none;
+    }
+
+    .heart-folder {
+        padding-left: 5px;
+    }
+
+    .timeline p {
+        display: none;
+    }
+
+    .dark-bar {
+        width: 50vw;
+    }
+
+    .volume-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .categories li:nth-child(n+2) {
+        display: none;
+    }
+
+    .row-1, .row-2 {
+        text-align: center;
+    }
+
+    .row-2 p {
+        text-align: center;
+    }
+    
+    .heart-folder {
+        display: none;
+    }
+
+    .tools {
+        gap: 0;
+        margin-right: 10px;
+    }
+
+    .tools .fa-list-ul {
+        display: none;
+    }
+
+    .tools .fa-desktop {
+        display: none;
     }
 }
 
