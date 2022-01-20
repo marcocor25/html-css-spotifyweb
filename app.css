@@ -1,0 +1,115 @@
+/* VIEVPORT 1280PX */
+
+@media screen and (max-width: 1280px) {
+    .card-wrapper {
+        gap: 30px 0;    
+    }
+
+    .card {
+        width: 22%;
+    }
+
+    .dark-bar {
+        width: 35vw;
+    }
+
+    .player-buttons {
+        gap: 20px;
+    }
+}
+
+/* VIEVPORT 900PX */
+
+@media screen and (max-width: 900PX) {
+    .card-wrapper {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+
+    .dark-bar {
+        width: 20vw;
+    }
+
+    .player-buttons {
+        gap: 15px;
+    }
+
+    .fa-play-circle {
+        margin: 0;
+    }
+}
+
+/* VIEWPORT 680PX */
+
+@media screen and (max-width: 680px) {
+    .sidebar {
+        flex-basis: 60px;
+    }
+
+    .widget {
+        flex-direction: column;
+    }
+
+    .widget .text {
+        display: none;
+    }
+
+    .playlist {
+        display: none;
+    }
+
+    .playlist-scroll {
+        display: none;
+    }
+
+    .bottom-container {
+        margin-top: auto;
+    }
+
+    .download {
+        border-bottom: none;
+    }
+
+    .download div {
+        display: none;
+    }
+
+    .profile a {
+        display: none;
+    }
+
+    .download, .profile {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-avatar {
+        margin-right: 0;
+    }
+
+    .categories {
+        padding: 15px;
+    }
+    
+    .music-box {
+        width: 200px;
+    }
+
+    .heart-folder {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .track-title {
+        flex-grow: 0.5;
+    }
+
+    .timeline {
+        gap: 12px;
+        font-size: 12px;
+    }
+}

@@ -69,7 +69,8 @@ img {
 
 .logo {
     width: 70%;
-    line-height: 90px;
+    padding: 0 15px;
+    line-height: 85px;
 }
 
 .menu {
@@ -243,7 +244,7 @@ img {
 .cta:hover {
     transform: scale(1.08);
     border: 1px solid white;
-    color: #white;
+    color: white;
 }
 
 .categories {
@@ -391,8 +392,8 @@ img {
     height: 100%;
     display: flex;
     align-items: center;
-    flex-shrink: 0;
     gap: 10px;
+    flex-shrink: 0;
 }
 
 .cover {
